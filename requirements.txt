@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+python-decouple
+python-jose
+passlib[bcrypt]
+apscheduler
+pydantic
+num2words
+reportlab
+Pillow
