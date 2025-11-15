@@ -10,3 +10,5 @@ num2words
 reportlab
 Pillow
 psycopg[binary]
+pydantic[email]
+email-validator
