@@ -9,3 +9,4 @@ pydantic
 num2words
 reportlab
 Pillow
+psycopg[binary]
