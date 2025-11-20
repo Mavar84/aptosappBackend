@@ -13,12 +13,11 @@ from tareas_recurrentes import generar_pagos_pendientes
 # Detectar si estamos en Vercel (serverless)
 EN_VERCEL = os.environ.get("VERCEL") is not None
 
-if not EN_VERCEL:
-    scheduler = BackgroundScheduler()
-    scheduler.add_job(generar_pagos_pendientes, 'cron', hour=14, minute=55)
-    scheduler.start()
-else:
-    print("⛔ APScheduler desactivado (Vercel no permite tareas en segundo plano).")
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(generar_pagos_pendientes, 'cron', hour=15, minute=08)
+scheduler.start()
+
 
 # ---------------------------------------------------------
 # Importar todos los routers
