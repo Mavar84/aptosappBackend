@@ -15,7 +15,7 @@
   "crons": [
     {
       "path": "/tareas/generar-pagos",
-      "schedule": "0 12 * * *"
+      "schedule": "25 21 * * *"
     }
   ]
 }
