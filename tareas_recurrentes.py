@@ -5,6 +5,7 @@ from models import Contrato, PagoMensual, TipoPagoEnum, ContratoInquilino
 from database import SessionLocal
 
 def generar_pagos_pendientes():
+    print("entra al metodo de generar pagos pendientes")
     hoy = date.today()
     ayer = hoy - timedelta(days=1)
 
