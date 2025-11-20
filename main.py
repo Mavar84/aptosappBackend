@@ -15,7 +15,7 @@ EN_VERCEL = os.environ.get("VERCEL") is not None
 
 if not EN_VERCEL:
     scheduler = BackgroundScheduler()
-    scheduler.add_job(generar_pagos_pendientes, 'cron', hour=14, minute=50)
+    scheduler.add_job(generar_pagos_pendientes, 'cron', hour=20, minute=50)
     scheduler.start()
 else:
     print("⛔ APScheduler desactivado (Vercel no permite tareas en segundo plano).")
