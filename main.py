@@ -15,7 +15,7 @@ EN_VERCEL = os.environ.get("VERCEL") is not None
 
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(generar_pagos_pendientes, 'cron', hour=20, minute=13)
+scheduler.add_job(generar_pagos_pendientes, 'cron', hour=15, minute=18)
 scheduler.start()
 
 
